@@ -1,12 +1,17 @@
 <div class="m-4">
   <header class="flex justify-between items-center">
     <img class="h-8" src="assets/images/logo.svg" alt="logo" />
-    <img class="h-6" src="assets/images/icon-menu.svg" alt="menu icon" />
+    <img
+      (click)="togglemenu()"
+      class="h-6"
+      src="assets/images/icon-menu.svg"
+      alt="menu icon"
+    />
   </header>
   <main>
     <picture>
       <source
-        media="(min-width: 650px)"
+        media="(min-width: 480px)"
         srcset="assets/images/image-web-3-desktop.jpg"
       />
       <img src="assets/images/image-web-3-mobile.jpg" alt="" />
@@ -20,14 +25,15 @@
   generation? Is VC Funding Drying Up? Private funding by VC firms is down 50%
   YOY. We take a look at what that means. 01 Reviving Retro PCs What happens
   when old PCs are given modern upgrades? 02 Top 10 Laptops of 2022 Our best
-  picks for various needs and budgets. 03 The Growth of Gaming How the pandemic
+  picks for various needs and buzdgets. 03 The Growth of Gaming How the pandemic
   has sparked fresh opportunities.
 </div>
-<div class="h-screen absolute top-0 left-0 w-full z-10 flex">
-  <div class="bg-very-dark-blue opacity-20 h-screen w-1/3"></div>
+<div *ngIf="showMenu" class="h-screen absolute top-0 left-0 w-full z-10 flex">
+  <div class="bg-very-dark-blue opacity-10 h-screen w-1/3"></div>
   <div class="h-screen flex flex-col w-2/3 bg-white opacity-100 p-6">
     <img
-      class="h-6 w-6 self-end"
+      (click)="togglemenu()"
+      class="h-7 w-7 self-end"
       src="assets/images/icon-menu-close.svg"
       alt=""
     />
