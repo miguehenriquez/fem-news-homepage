@@ -1,5 +1,5 @@
 <div [ngClass]="showMenu ? ' h-screen overflow-hidden' : ''">
-  <div class="m-4">
+  <div class="mx-4 my-6">
     <header class="flex justify-between items-center">
       <img class="h-8" src="assets/images/logo.svg" alt="logo" />
       <img
@@ -9,7 +9,7 @@
         alt="menu icon"
       />
     </header>
-    <main>
+    <main class="my-7">
       <picture>
         <source
           media="(min-width: 480px)"
@@ -17,22 +17,33 @@
         />
         <img src="assets/images/image-web-3-mobile.jpg" alt="" />
       </picture>
+      <h1 class="font-bold text-4xl mr-10 my-5">
+        The Bright Future of Web 3.0?
+      </h1>
+
+      <p class="text-c-dark-grayish-blue">
+        We dive into the next evolution of the web that claims to put the power
+        of the platforms back into the hands of the people. But is it really
+        fulfilling its promise?
+      </p>
+      <button
+        class="bg-c-soft-red tracking-widest my-5 text-c-off-white uppercase font-bold py-2 px-8"
+      >
+        Read more
+      </button>
     </main>
-    The Bright Future of Web 3.0? We dive into the next evolution of the web
-    that claims to put the power of the platforms back into the hands of the
-    people. But is it really fulfilling its promise? Read more New Hydrogen VS
-    Electric Cars Will hydrogen-fueled cars ever catch up to EVs? The Downsides
-    of AI Artistry What are the possible adverse effects of on-demand AI image
-    generation? Is VC Funding Drying Up? Private funding by VC firms is down 50%
-    YOY. We take a look at what that means. 01 Reviving Retro PCs What happens
-    when old PCs are given modern upgrades? 02 Top 10 Laptops of 2022 Our best
-    picks for various needs and buzdgets. 03 The Growth of Gaming How the
-    pandemic has sparked fresh opportunities.
+    New Hydrogen VS Electric Cars Will hydrogen-fueled cars ever catch up to
+    EVs? The Downsides of AI Artistry What are the possible adverse effects of
+    on-demand AI image generation? Is VC Funding Drying Up? Private funding by
+    VC firms is down 50% YOY. We take a look at what that means. 01 Reviving
+    Retro PCs What happens when old PCs are given modern upgrades? 02 Top 10
+    Laptops of 2022 Our best picks for various needs and buzdgets. 03 The Growth
+    of Gaming How the pandemic has sparked fresh opportunities.
   </div>
   <div *ngIf="showMenu" class="h-screen absolute top-0 left-0 w-full z-10 flex">
     <div
       (click)="togglemenu()"
-      class="bg-very-dark-blue opacity-20 h-screen w-1/3"
+      class="bg-c-very-dark-blue opacity-20 h-screen w-1/3"
     ></div>
     <div class="h-screen flex flex-col w-2/3 bg-white opacity-100 p-6">
       <img
