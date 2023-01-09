@@ -1,4 +1,8 @@
-# NewsHomepage
+# News Homepage
+
+This project is a challange from [Front end mentor website](https://www.frontendmentor.io/challenges/news-homepage-H6SWTa1MFl)
+
+# Angular details
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.1.
 
